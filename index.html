@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - LavaJato Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5St14PfYDmhI_oAUkN6Z9m_VYgsyWH6Jn81Z9aiZFs3_HKs6N6HD2zO1A537bveEUDXAspukj5p0lSywgC-mbGpBr9Ojiw_ds3wHD5vy_11qVOQz1GjCuNRwJPzOr2sPqCGa8cbpF--OXZk_HA7Je5aveSb1x4AUNAPgqrVb6RCjuMMqNU_dOWHGx-Hn_PS9pcYda_ghovkxuJy3qJ0Bctf4JBSxmasemA-h0XReCCQe2xPOUGUJlYHf3qHGqoqk-dACsTwl1JmjTGsexvBgO_vBOjZq-pPo-0WTk85BDyemCIBSzOjfpD0PS9dFo-EEKhJXo82Zm47rIEUCZ2f-qDjaZVD97rS7nOyaS972YhDBMo2jq4Hle6X9y-gNO2wwbcsHgvIjeU_4YUBk-Zcl_fmDN5RpfnmUApc9XY4PIB_K2-1_2ayc7zOxpkskM6vhGggRalPWo79T0gXBC-y_imAjTzDT-Vccvdr7FXw56DUyhu2L0zcxPao3qRSRg2Xy28WhugFdCopfDZcydRvqChf3MiYxssOhbgb8yuE76yYTznD60Yfq2U6R4gHTB-3tZEOeIEZQ8ZIz05RXBO13lpwdFTumcFzdzHYdRIzWbMMiY-EkMQ1HwQQQESMEH8KKY14ZtXzRJ49sVwiixsAQ5aI0bLTuXqSmczqcqUKLBQoXjFF_b2p5q-34VK3fckem0Memp4xtnlVLeBBink3INhvU6GIjWxWhzCG5bHQmZ4bf9Q6PNqkQZjJsJVOS9jP1onlmd3QRhXEg2pzDDDiHM5vELMDTlwSKsIY7QqXierSz2yLhkKbnPxv3p92XW2v76NrMYB0rOGdoGjCKEF7LUw2-xGhtPlp1jtQC4s7my0g" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvUUJDY0hQaHBrdVNRQ3VxTGhpYTVYVC9zYW5kYm94L0M5akdmdnNONE1xNkJDbUUxZ1dYdjNfMTc0NjE5Nzc5NDg0Nl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDNWd2JHOWhaQzlwYm1SbGVBLmh0bWw_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ29udGVudC1TaGEyNTY9VU5TSUdORUQtUEFZTE9BRCZYLUFtei1DcmVkZW50aWFsPUFLSUFaVjNBMkVDWk9GSFZUNFVWJTJmMjAyNTA1MDIlMmZ1cy1lYXN0LTElMmZzMyUyZmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTAyVDE1MjM1NlomWC1BbXotRXhwaXJlcz02MDM4MDAmWC1BbXotU2lnbmF0dXJlPWQwZDYzYjdiY2E0OTA5NjkyMjE5ZThlZmNhMDdhNDY0ODc1YzJiMTg3MGUwNTlmOWU3ZTJkNzc5ZWRmZmE2NDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTJhJTNkVVRGLTglMjclMjdpbmRleC5odG1sJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT10ZXh0JTJmaHRtbCZ4LWFtei1jaGVja3N1bS1tb2RlPUVOQUJMRUQmeC1pZD1HZXRPYmplY3Q"/></head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo-container">
+        <i class="fas fa-car-alt logo-icon"></i>
+        <h1>LavaJato Premium</h1>
+      </div>
+      
+      <div id="error-message" class="error-message hidden">
+        <i class="fas fa-exclamation-circle"></i>
+        <span id="error-text">Usuário ou senha incorretos</span>
+      </div>
+
+      <form id="loginForm" autocomplete="off">
+        <div class="input-group">
+          <i class="fas fa-user input-icon"></i>
+          <input type="text" id="username" placeholder="Usuário" autocomplete="off" required>
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-lock input-icon"></i>
+          <input type="password" id="password" placeholder="Senha" autocomplete="new-password" required>
+          <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+        </div>
+        
+        <button type="submit" class="btn-login">
+          <i class="fas fa-sign-in-alt"></i> Entrar
+        </button>
+      </form>  
+
+      <div class="login-footer">
+        <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+        <p><a href="#">Esqueci minha senha</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Dono - LavaJato Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bCAnU_XRVNVovdC5gJR8_5MgFKQBKgNYTxfUhCeNQj63VGntiMMhrXR4uBj4YT7ix7tXNoDDZ8xQDZ6rIIOEhi7mVVtFjDLn10UyL9IvDovfMyaPDHMopm9ZfGc5AhAhxMxwfoiqWa4TSUqm5C79jxiBEBzbBU-9Et-WO8HkW-owzKB0RI7faUEqE3C4otUtvpV4ISEMPbnBtdsUQmeYkhByXJ1GMPNfuM1oNnjX9Yxw1BHAbFyC1WSA0Z2MYCftdFKMC8t_UH_IlWYIN1kGlO8pHclvzxglD0Jtyl_0rSrt91610H51zTuRc_3xdX0elSXDzHmfklE6iOayyOrdj8Bm8meuJCT2V8kNUXiDyZ1K4VxeOoisT9mCSQA-BeEvWSSJRQbk56O4iMxOMgiYGblgkTRG0KFgktWnuDPqnKxmphD1MHOQ8v7siKgCLeVH7ZZwN-nBoAhpWZPLscwqzKgh2BFY9M9J53x1nooRWPFis0zhWxTKRU_u6FCFZ4Aul41-oj2AvZGw6al8eeMyALe7AUVw2tVIJTUNxkEK7W8NUr6kMyABNYGGUhnUAIeF1LL_pwDxgvy702ERLzxw4vOFuzLwx_P4JGS9QU34-1kQn42voJh9vOC3xUi_pAk7vf1te0FgOTW1JCPiztvX3g58XDMnluJwHCjw9d_ZwXubCFkUFmSpm3mloxAG__nJk3bk020qhEy97QJo7fZl8boUIzqdm4867piVw2uZvZs-V6A5ALUzo2fqOKin4iYX2Rf8Jcupgna88Dc_HimYG9krf-Yq0tCc1mbn2ckTFC0Pnnvii-j4nHwb7MrIQnrNty-WRy2zKy38gjbam9bdbT3Myd_McA7yZFF2qWLFBx4" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aWRhLXByaXZhdGUuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vc2Vzc2lvbkZpbGUvUUJDY0hQaHBrdVNRQ3VxTGhpYTVYVC9zYW5kYm94L0M5akdmdnNONE1xNkJDbUUxZ1dYdjNfMTc0NjE5Nzc5NDg0Nl9uYTFmbl9MMmh2YldVdmRXSjFiblIxTDJSdmJtOC5odG1sP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNvbnRlbnQtU2hhMjU2PVVOU0lHTkVELVBBWUxPQUQmWC1BbXotQ3JlZGVudGlhbD1BS0lBWlYzQTJFQ1pPRkhWVDRVViUyZjIwMjUwNTAyJTJmdXMtZWFzdC0xJTJmczMlMmZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUwMlQxNTI0MDNaJlgtQW16LUV4cGlyZXM9NjAzODAwJlgtQW16LVNpZ25hdHVyZT04YzNlYmJiYzcxZWQ3MWQxYWNhZWI3NDViZjZlZjBiZmEyODAyM2ZmMjBlMmMxMGZmNjQ0ZDk2MGRlMDRlMTU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM2IlMjBmaWxlbmFtZSUyYSUzZFVURi04JTI3JTI3ZG9uby5odG1sJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT10ZXh0JTJmaHRtbCZ4LWFtei1jaGVja3N1bS1tb2RlPUVOQUJMRUQmeC1pZD1HZXRPYmplY3Q"/><style>
+    /* Estilos específicos para dono.html (serão movidos para style.css depois) */
+    .owner-panel {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .owner-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .owner-header h1 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+    }
+    .logout-button {
+      background: var(--error);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+    }
+    .logout-button:hover {
+      background: darkred;
+    }
+    .appointments-section h2 {
+      margin-bottom: 1rem;
+    }
+    .appointments-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .appointments-table th, .appointments-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .appointments-table th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+    .appointments-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .status-select {
+      padding: 0.3rem 0.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .status-concluido {
+      color: var(--success);
+      font-weight: bold;
+    }
+    .status-pendente {
+      color: var(--warning);
+      font-weight: bold;
+    }
+    .no-appointments {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="owner-panel">
+    <header class="owner-header">
+      <h1><i class="fas fa-tachometer-alt"></i> Painel do Dono</h1>
+      <button class="logout-button" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Sair</button>
+    </header>
+
+    <section class="appointments-section">
+      <h2><i class="far fa-calendar-check"></i> Agendamentos</h2>
+      <div class="table-container">
+        <table class="appointments-table" id="appointmentsTable">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Cliente (Veículo)</th>
+              <th>Serviços</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Linhas de agendamento serão inseridas aqui pelo JavaScript -->
+            <tr>
+              <td colspan="6" class="no-appointments">Nenhum agendamento encontrado.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script> <!-- Usaremos o mesmo script por enquanto, depois podemos separar -->
+</body>
+</html>
+
